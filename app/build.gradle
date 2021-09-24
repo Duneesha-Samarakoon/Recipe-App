@@ -34,6 +34,8 @@ dependencies {
 
     implementation 'com.github.mohommadatif:CircularImageView:1.0.0'
     implementation 'com.theartofdev.edmodo:android-image-cropper:2.8.+'
+    //image loading from firebase
+    implementation 'com.squareup.picasso:picasso:2.71828'
 
     implementation 'androidx.constraintlayout:constraintlayout:2.1.0'
     implementation 'com.google.firebase:firebase-auth:21.0.1'
