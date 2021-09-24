@@ -26,7 +26,7 @@ import java.util.HashMap;
 public class MainAdminActivity extends AppCompatActivity {
 
     private TextView nameTv;
-    private ImageButton logoutBtn;
+    private ImageButton logoutBtn, editProfileBtn;
 
     private FirebaseAuth firebaseAuth;
     private ProgressDialog progressDialog;
