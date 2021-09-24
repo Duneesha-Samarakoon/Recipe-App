@@ -16,7 +16,9 @@
         android:roundIcon="@id/icon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
-        <activity android:name=".ForgotPasswordActivity"></activity>
+        <activity android:name=".MainUserActivity"></activity>
+        <activity android:name=".MainAdminActivity" />
+        <activity android:name=".ForgotPasswordActivity" />
         <activity android:name=".RegisterUserActivity" />
         <activity android:name=".RegisterAdminActivity" />
         <activity android:name=".LoginActivity" />
