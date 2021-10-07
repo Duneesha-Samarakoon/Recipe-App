@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddRecipeActivity">
+
+    <!--Toolbar-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:padding="10dp"
+        android:background="@drawable/shape_rec01">
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:src="@drawable/ic_back_white"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@null"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Add Recipe"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+
+    <!--Form to input data-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/recipeIconIv"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_add_recipe_primary"
+            android:c_border="true"
+            android:c_border_color="@color/colorPrimaryDark"
+            android:c_border_width="1dp"/>
+
+        <EditText
+            android:id="@+id/titleEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:hint="Title"
+            android:background="@drawable/shape_rec02"
+            android:drawableStart="@drawable/ic_title_gray"
+            android:drawablePadding="10dp"
+            android:inputType="textPersonName|textCapWords"
+            android:padding="10dp"
+            android:layout_below="@+id/recipeIconIv"/>
+
+        <EditText
+            android:id="@+id/descriptionEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:hint="Description"
+            android:background="@drawable/shape_rec02"
+            android:drawableStart="@drawable/ic_title_gray"
+            android:drawablePadding="10dp"
+            android:inputType="textCapSentences|textMultiLine"
+            android:padding="10dp"
+            android:layout_below="@+id/titleEt"/>
+
+        <TextView
+            android:id="@+id/categoryTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:drawableEnd="@drawable/ic_down_gray"
+            android:hint="Category"
+            android:background="@drawable/shape_rec02"
+            android:drawableStart="@drawable/ic_categories_gray"
+            android:drawablePadding="10dp"
+            android:inputType="textCapSentences|textMultiLine"
+            android:padding="10dp"
+            android:layout_below="@+id/descriptionEt"/>
+
+        <EditText
+            android:id="@+id/ingrediantEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/shape_rec02"
+            android:drawableStart="@drawable/ic_title_gray"
+            android:hint="Ingrediants"
+            android:drawablePadding="10dp"
+            android:inputType="textMultiLine"
+            android:padding="10dp"
+            android:layout_below="@+id/categoryTv"/>
+
+        <EditText
+            android:id="@+id/methodEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/shape_rec02"
+            android:drawableStart="@drawable/ic_title_gray"
+            android:hint="Method"
+            android:drawablePadding="10dp"
+            android:inputType="textMultiLine"
+            android:padding="10dp"
+            android:layout_below="@+id/ingrediantEt" />
+
+        <!--Whether or not recipe on decorations-->
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/decorationSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_below="@id/methodEt"
+            android:text="Decorations"/>
+
+        <EditText
+            android:id="@+id/decorationedMethodEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/shape_rec02"
+            android:drawableStart="@drawable/ic_title_gray"
+            android:hint=" Decoration Method"
+            android:drawablePadding="10dp"
+            android:inputType="textMultiLine"
+            android:padding="10dp"
+            android:layout_below="@+id/decorationSwitch" />
+
+        <EditText
+            android:id="@+id/decorationedNoteEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/shape_rec02"
+            android:drawableStart="@drawable/ic_title_gray"
+            android:hint=" Decoration Note"
+            android:drawablePadding="10dp"
+            android:inputType="textMultiLine"
+            android:padding="10dp"
+            android:layout_below="@+id/decorationedMethodEt" />
+        <Button
+            android:id="@+id/addRecipeBtn"
+            android:text="Add Recipe"
+            android:layout_below="@id/decorationedNoteEt"
+            android:layout_centerHorizontal="true"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="150dp"
+            android:layout_marginTop="5dp"/>
+
+    </RelativeLayout>
+</LinearLayout>

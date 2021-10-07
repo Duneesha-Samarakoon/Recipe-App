@@ -16,7 +16,25 @@
         android:roundIcon="@id/icon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
-        <activity android:name=".ForgotPasswordActivity"></activity>
+        <activity
+            android:name=".ProfileEditUserActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ProfileEditAdminActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainUserActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainAdminActivity"
+            android:exported="true" />
+        <activity
+            android:name=".EditRecipeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".AddRecipeActivity"
+            android:exported="true" />
+        <activity android:name=".ForgotPasswordActivity" />
         <activity android:name=".RegisterUserActivity" />
         <activity android:name=".RegisterAdminActivity" />
         <activity android:name=".LoginActivity" />
